@@ -31,17 +31,18 @@ export const login = async ({ username, password }) => {
           access_token: 'fake-jwt-token'
         }
       };
-      
+
       localStorage.setItem('token', response.data.access_token);
       return response;
     } else {
-      throw {
-        response: {
-          data: {
-            error: 'Usuário ou senha inválidos'
-          }
-        }
-      };
+      // throw { // Removido: Expected an error object to be thrown
+      //   response: {
+      //     data: {
+      //       error: 'Usuário ou senha inválidos'
+      //     }
+      //   }
+      // };
+      throw new Error('Usuário ou senha inválidos'); // Adicionado: Lança uma instância de Error
     }
   } catch (error) {
     console.error('Erro no login:', error);

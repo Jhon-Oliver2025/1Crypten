@@ -3,7 +3,10 @@ import axios from 'axios';
 export const getSignals = async () => {
   try {
     const response = await axios.get('http://localhost:5001/sinais_lista.csv', {
-      headers: {
+      // headers: { // Removido: 'headers' is assigned a value but never used
+      //   'Content-Type': 'text/csv'
+      // }
+      headers: { // Adicionado: Objeto passado diretamente
         'Content-Type': 'text/csv'
       }
     });

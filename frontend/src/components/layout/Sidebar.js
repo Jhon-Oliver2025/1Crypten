@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link /*, useNavigate*/ } from 'react-router-dom'; // Removido: 'useNavigate' importado mas não usado
 import { useDispatch } from 'react-redux';
 import { logout } from '../../store/slices/authSlice';
 import logo from '../../assets/logo2.0.png';
@@ -7,7 +7,7 @@ import './Sidebar.css';
 
 const Sidebar = ({ isOpen, onToggle }) => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // const navigate = useNavigate(); // Removido: 'navigate' declarado mas não usado
 
   const handleLogout = () => {
     dispatch(logout());

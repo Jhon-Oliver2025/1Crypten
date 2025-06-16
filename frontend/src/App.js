@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { getSignals } from './services/signalsService';
 import MainLayout from './components/layout/MainLayout';
-import Header from './components/Header';
+// import Header from './components/Header'; // Removido: 'Header' is defined but never used
 import AppRoutes from './routes/AppRoutes';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
