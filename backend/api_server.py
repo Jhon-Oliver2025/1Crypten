@@ -13,8 +13,7 @@ import os
 
 if __name__ == '__main__':
     print("\n=== KryptoN Trading Bot API ===")
-    print("Servidor API iniciado na porta 5001")
-    print("Endpoint: http://localhost:5001/sinais_lista.csv")
+    {{ edit_1 }}
     # Obtém a porta da variável de ambiente PORT, usando 5001 como fallback para desenvolvimento local
     port = int(os.environ.get('PORT', 5001))
     # Roda o aplicativo Flask no endereço 0.0.0.0 e na porta obtida
