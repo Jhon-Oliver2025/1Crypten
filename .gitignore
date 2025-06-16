@@ -1,0 +1,33 @@
+﻿# Ignora a pasta de módulos do Node.js na raiz
+node_modules/
+
+# Ignora a pasta de módulos do Node.js no frontend
+frontend/node_modules/
+
+# Ignora a pasta de build do frontend
+frontend/build/
+
+# Ignora arquivos de log
+*.log
+
+# Ignora arquivos de cache
+.cache/
+.eslintcache
+
+# Ignora variáveis de ambiente locais
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignora arquivos específicos do sistema operacional (Windows)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignora arquivos específicos do macOS (se aplicável)
+.DS_Store
+
+# Ignora arquivos específicos do Linux (se aplicável)
+*~
