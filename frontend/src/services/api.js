@@ -3,7 +3,11 @@ import axios from 'axios';
 // Define a URL base usando uma variável de ambiente.
 // Em desenvolvimento local, use 'http://localhost:5001' (ou a porta correta do seu backend local).
 // No Render, defina a variável de ambiente REACT_APP_BACKEND_URL com a URL pública do seu backend.
-{{ edit_1 }}
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5001'; // Use a porta correta do seu backend local se for diferente de 5001
+
+const api = axios.create({
+  baseURL: `${API_BASE_URL}/api` // Adiciona '/api' se o seu backend tiver um prefixo
+});
 
 // Interceptor para adicionar o token em todas as requisições
 api.interceptors.request.use(config => {
