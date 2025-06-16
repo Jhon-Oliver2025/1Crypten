@@ -1,0 +1,27 @@
+.signals-wrapper {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.signals-content {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #0077ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 119, 255, 0.3),
+              inset 0 0 15px rgba(0, 119, 255, 0.1);
+}
+
+.signals-content .signals-grid {
+  padding-left: 15px;  /* Ajustado para alinhar com o início do cabeçalho */
+}
+
+@media (max-width: 768px) {
+  .signals-wrapper {
+    padding: 10px;
+  }
+  
+  .signals-content {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,63 @@
+.header-container {
+  background-color: var(--sidebar-bg);
+  border-radius: 8px;
+  margin: 20px 20px 10px 20px; /* Reduzido margin-bottom para 10px */
+  padding: 15px; /* Reduzido padding geral */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  text-align: center;
+  color: #FFD700;
+  font-size: 28px;
+  margin-bottom: 15px; /* Reduzido margin-bottom */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3),
+               0 0 20px rgba(255, 215, 0, 0.2),
+               0 0 30px rgba(255, 215, 0, 0.1);
+  font-weight: 600;
+}
+
+.header-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 8px; /* Reduzido padding-top */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #fff;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.stat-value.buy {
+  color: #4CAF50;
+}
+
+.stat-value.sell {
+  color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .header-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-title {
+    font-size: 24px;
+  }
+}

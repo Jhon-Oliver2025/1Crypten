@@ -1,0 +1,19 @@
+.signals-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.signals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .signals-grid {
+    grid-template-columns: 1fr;
+  }
+}

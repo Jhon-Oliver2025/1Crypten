@@ -1,0 +1,20 @@
+.maintenance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  color: #fff;
+  text-align: center;
+}
+
+.maintenance-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #FFD700;
+}
+
+.maintenance-container p {
+  font-size: 18px;
+  color: #ccc;
+}

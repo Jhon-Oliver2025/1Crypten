@@ -1,0 +1,23 @@
+.dashboard,
+.settings,
+.support,
+.profile {
+  padding: 20px;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+.dashboard-content,
+.settings-content,
+.support-content,
+.profile-content {
+  background: #1a1a2e;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 300px;
+}
