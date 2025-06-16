@@ -3,16 +3,13 @@ import axios from 'axios';
 export const getSignals = async () => {
   try {
     const response = await axios.get('http://localhost:5001/sinais_lista.csv', {
-      // headers: { // Removido: 'headers' is assigned a value but never used
-      //   'Content-Type': 'text/csv'
-      // }
       headers: { // Adicionado: Objeto passado diretamente
         'Content-Type': 'text/csv'
       }
     });
-    
+
     const lines = response.data.split('\n');
-    const headers = lines[0].split(',');
+    // const headers = lines[0].split(','); // Removido: 'headers' is assigned a value but never used
     const signals = lines.slice(1)
       .filter(line => line.trim())
       .map(line => {
